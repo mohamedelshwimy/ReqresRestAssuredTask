@@ -6,22 +6,33 @@ This project demonstrates a structured API automation framework using **RestAssu
 
 ```
 api-automation-framework/
-│
+├── main/
+│   ├── java/
+│   │    ├── apiConfig/        
+│   │    └── utils/             
+│   │
+│   └── resources/
+│       └── testData/          
 ├── src/
 │   └── test/
+│       ├── apiVerification/    
+│       ├── Base/               
+│       ├── Responses/          
+│       └── testCases/          
 │
-├── testng.xml                 # TestNG suite configuration
-├── pom.xml                    # Maven project file with dependencies
-└── README.md                  # Project documentation
+├── testng.xml                 
+├── pom.xml                    
+└── README.md                  
 ```
 
 ## ✅ Features
 
 - API testing with **RestAssured**
+- CRUD operations for ReqRes Apis
 - Test execution and reporting with **TestNG**
 - Structured and modular code
-- Centralized configuration management
 - Maven-based dependency and build management
+- Assertion handler for clean and readable tests
 
 ## 🔧 Prerequisites
 
@@ -37,7 +48,7 @@ Ensure the following are installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/api-automation-framework.git
+git clone https://github.com/mohamedelshwimy/ReqresRestAssuredTask.git
 ```
 
 ### 2. Configure the Environment
@@ -45,7 +56,7 @@ git clone https://github.com/your-username/api-automation-framework.git
 Edit the `src/test/resources/config.properties` file:
 
 ```properties
-baseUrl=https://reqres.in
+baseUrl = https://reqres.in
 ```
 
 ### 3. Build the Project
