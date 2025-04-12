@@ -9,12 +9,6 @@ api-automation-framework/
 │
 ├── src/
 │   └── test/
-│       ├── java/
-│       │   ├── config/         # Configuration classes and utility loaders
-│       │   ├── tests/          # Test classes (Create, Retrieve, Update)
-│       │   └── utils/          # Helper methods for request creation, response validation
-│       └── resources/
-│           └── config.properties # Contains baseURL and other configs
 │
 ├── testng.xml                 # TestNG suite configuration
 ├── pom.xml                    # Maven project file with dependencies
@@ -27,7 +21,6 @@ api-automation-framework/
 - Test execution and reporting with **TestNG**
 - Structured and modular code
 - Centralized configuration management
-- Robust error handling and logging
 - Maven-based dependency and build management
 
 ## 🔧 Prerequisites
@@ -45,7 +38,6 @@ Ensure the following are installed:
 
 ```bash
 git clone https://github.com/your-username/api-automation-framework.git
-cd api-automation-framework
 ```
 
 ### 2. Configure the Environment
@@ -93,7 +85,6 @@ Or directly from your IDE using `testng.xml`.
 
 ## ⚠️ Error Handling
 
-- Handles invalid requests and network issues
 - Logs detailed error messages for debugging
 - Test failures include descriptive assertions
 
@@ -102,7 +93,6 @@ Or directly from your IDE using `testng.xml`.
 - [RestAssured](https://rest-assured.io/)
 - [TestNG](https://testng.org/)
 - [Maven](https://maven.apache.org/)
-- [SLF4J](http://www.slf4j.org/) (optional, for logging)
 
 All dependencies are listed in the `pom.xml`.
 
